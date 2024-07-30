@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+         <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+ <div class="header"></div>
+    <h2>Design Your Website</h2>
+    <p>Don't forget for like, comment, share, and subscribe</p>
+    <div class="buttons">
+        <a href="#">MORE INFORMATION?</a>
+        <a href="#">SUBSCRIBE</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <div class="profile-container">
+      <img src="risnacantik.jpg" alt="Deskripsi foto" class="profile-container"width ="200" height="250">
+      <div class="profile-text">
+        <p><strong>NAMA    :</strong>Risna Meilani Wati Idris</p>
+        <p><strong>NIM    :</strong>16323059</p>
+        <p><strong>JURUSAN    :</strong>Manajemen Informatika</p>
+        <p><strong>KELAS    :</strong>One b</p>
+        <p><strong>NAMA INSTAGRAM    :</strong>@rmeilani5_</p>
+        <p><strong>HOBI    :</strong>Mendengar musik</p>
+      </div>
+
+    </div>
+    
+
+  </section>
+
+  <section id="audio-video">
+    <h2>Audio dan Video</h2>
+    <p>My Fav song</p>
+    <audio controls src="wannabeyours.mp3"></audio>
+
+    <p>Video Perkenalan </p>
+    <video controls autoplay src="Video WhatsApp 2024-06-03 pukul 23.18.51_b5ceb27b.mp4" width="250" height="250"></video>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>Haloo everyone perkenalkan nama saya Risna Meilani Wati Idris, biasanya dipanggil Risna.
+      Saya lahir dan besar di kota Fak-fak Papua barat pada tanggal 27 mei 2005, Saya anak pertama dari 4 bersaudara. 
+      oh ya hobi saya adalah mendengarkan musik dan memotret sunset, saya juga punya banyak 
+      koleksi foto sunset because I Love sunset so much wkwk. Makanan kesukaan saya yaitu bakso, of course siapa yang tidak
+      suka sama bakso kalo sampai ada yang ga suka fix dia bukan manusia (wkwkwk bersyanda guys). Dan warna favorit saya yaitu
+      Cream dan Abu-abu.
+      Saya sekarang kuliah di salah satu kampus di Fak-fak yaitu Politeknik Negeri Fak-fak Jurusan Manajemen Informatika.
+      Itu saja perkenalan singkat dari saya, THANKYOUUU!!!! </p>
+  </section>
+
+  <section id="berita">
+    <h2>Berita Terbaru</h2>
+    <iframe src="https://www.kompas.com/" frameborder="0"></iframe>
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2024 R.Meilani</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
